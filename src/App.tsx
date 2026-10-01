@@ -8,6 +8,11 @@ import Home from "pages/EmployeeApp/Home/Home";
 import About from "pages/EmployeeApp/About/About";
 import LogIn from "pages/EmployeeApp/LogIn/LogIn";
 import ContactUs from "pages/EmployeeApp/ContactUs/ContactUs";
+import Clients from "pages/clients/clients";
+import Google from "pages/clients/Google/Google";
+import Amazon from "pages/clients/Amazon/Amazon";
+import Netflix from "pages/clients/Netflix/Netflix";
+
 
 // Lessons
 import Lesson_06 from "lessons/Lesson_06/Lesson_06";
@@ -28,7 +33,11 @@ function App() {
       <GlobalStyles />
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />}  />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/clients/google" element={<Google />} />
+          <Route path="/clients/amazon" element={<Amazon />} />
+          <Route path="/clients/netflix" element={<Netflix />} />
+          <Route path="/" element={<Home />}  />7
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/contactUs" element={<ContactUs />} />
