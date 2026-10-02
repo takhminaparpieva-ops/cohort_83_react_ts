@@ -36,6 +36,9 @@ function Layout({ children }: LayoutProps) {
             Home
           </HeaderLink>
           {/* <HeaderLink >Clients</HeaderLink> */}
+          <HeaderLink style={getActiveStyles} to="/clients">
+           Clients
+          </HeaderLink>
           <HeaderLink style={getActiveStyles} to="/contactUs">
             Contact Us
           </HeaderLink>
@@ -58,6 +61,7 @@ function Layout({ children }: LayoutProps) {
         <FooterNavigation>
           <FooterLink to="">Home</FooterLink>
           {/* <FooterLink>Clients</FooterLink> */}
+          <FooterLink to="/clients">Clients</FooterLink>
           <FooterLink to="/contactUs">Contact Us</FooterLink>
           <FooterLink to="/about">About</FooterLink>
           <FooterLink to="/login">Login</FooterLink>
